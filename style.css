@@ -16,3 +16,27 @@ footer {
     text-align: center;
     background-color: orange;
 }
+
+.header {
+    font-size: 46px;
+}
+.footer {
+    font-size: 10px;
+}
+.content {
+    font-size: 14px;
+}
+.navigation {
+    font-size: 12px;
+}
+.sidebar {
+    font-size: 10px;
+}
+
+.header, .footer, .sidebar {
+    background-color: magenta;
+}
+
+.navigation {
+    background-color: blue;
+}
