@@ -1,15 +1,28 @@
 * {
     font-family: sans-serif;
-    font-size: 14px;
+    /* Global value of 14px */
+    /* font-size: 14px; */
 }
 
-header {
-    text-align: center;
+header.header {
     background-color: red;
+
+    width: 700px;
+	height: 40px;
+    border: 2px solid gray;
+    margin: 10px 0% 10px 25%;
+	padding: 15px;
 }
 
-nav, aside {
+section article h3 {
+    text-align: center;
     background-color: green;
+
+    width: 220px;
+    height: 20px;
+    border: 2px solid gray;
+    margin: 20px;
+    padding: 20px;
 }
 
 footer {
@@ -17,26 +30,69 @@ footer {
     background-color: orange;
 }
 
-.header {
+header.header {
     font-size: 46px;
 }
-.footer {
-    font-size: 10px;
-}
-.content {
-    font-size: 14px;
-}
-.navigation {
-    font-size: 12px;
-}
-.sidebar {
+
+footer.footer, aside.sidebar {
     font-size: 10px;
 }
 
-.header, .footer, .sidebar {
+section.content {
+    font-size: 14px;
+}
+
+nav.navigation {
+    font-size: 12px;
+}
+
+header.header,
+footer.footer,
+aside.sidebar {
     background-color: magenta;
 }
 
-.navigation {
+nav.navigation {
     background-color: blue;
+}
+
+nav ol li {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+nav a.color:link, a.color:visited {
+    color: white;
+}
+
+nav a.color:hover, a.color:active {
+    color: magenta;
+}
+
+aside#more-courses,
+div {
+    width: 330px;
+    height: 130px;
+    border: 2px solid gray;
+    padding: 15px;
+    margin: 20px;
+}
+
+/*
+    6. How could you add weight to the global font definition to win over the classes added by point 3?
+*/
+header#title,
+footer#footerId,
+section#courses,
+nav#menu,
+aside#more-courses {
+    font-size: 15px;
+}
+
+/*
+    7. Imagine there is a declaration like class=”oh-no-inline-styles” style=”background:red” and you need to change the background to green without changing the inline style. How could you accomplish this?
+    -With !important
+*/
+.oh-no-inline-styles {
+    background-color: green !important;
 }
