@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+}
+
+/* Global margins */
+nav a.item, input#see, article p, section p {
+    margin: 10px;
+}
+
+header h1 {
+    margin: 30px 0px 10px 10px;
+}
+
+nav {
+    text-align: center;
+    background-color: #3670df;
+    padding: .5px;
+}
+
+nav a.item {
+    color: #e3e3e3;
+    text-decoration: none;
+}
+
+nav a:link:hover {
+    color: #e01818;
+    text-decoration: underline;
+}
+
+nav a:visited {
+    color: #329c28;
+    text-decoration: bold;
+}
+
+nav ul li {
+    text-align: center;
+    display: inline-block;
+}
+
+section#hidden {
+    font-size: 30px;
+    opacity: 0;
+    animation: hidden 3s;
+    
+}
+
+@keyframes hidden {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+input#see {
+    padding: 10px;
+}
+
+article h3#history {
+    text-align: center;
+    font-size: 20px;
+}
+
+section h4.name-car {
+    font-size: 20px;
+}
+
+section {
+    text-align: center;
+}
+ 
