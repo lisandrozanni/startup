@@ -2,6 +2,12 @@ body {
     font-family: sans-serif;
 }
 
+button {
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+}
+
 section#hidden {
     display: flex;
     justify-content: center;
@@ -23,9 +29,11 @@ section#info {
     text-align: center;
 }
 
-button {
+aside {
     display: flex;
-    justify-content: center;
-    padding: 10px;
+    justify-content: flex-end;
+}
+
+form {
     margin: 5px;
 }
