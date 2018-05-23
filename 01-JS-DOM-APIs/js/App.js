@@ -1,5 +1,5 @@
 function see() {
-    alert("Hello!");
+    alert("Hello!!");
 }
 
 function addSection() {
